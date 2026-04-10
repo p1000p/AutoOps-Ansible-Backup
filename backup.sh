@@ -14,3 +14,5 @@ Ansible yml File Controls and Distributes the work to all the connected systems 
 
 
 
+NOTE: Run this Command Locally before Testing 
+chmod +x backup.sh
