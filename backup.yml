@@ -9,3 +9,11 @@
   tasks:
     - name: Run backup script
       shell: /home/user/backup.sh
+
+
+
+# Test connection
+ansible -i hosts.ini servers -m ping
+
+# Run playbook
+ansible-playbook -i hosts.ini backup.yml
