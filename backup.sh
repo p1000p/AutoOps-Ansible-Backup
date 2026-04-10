@@ -1,7 +1,8 @@
-- name: Execute Backup Script on All Servers
-  hosts: servers
-  become: yes
+# Bash Script
 
-  tasks:
-    - name: Run backup script
-      shell: /home/user/backup.sh
+#!/bin/bash
+
+mkdir -p /home/user/backup
+
+# Print backup by writing log
+echo "Backup executed on $(hostname) at $(date)" >> /home/user/backup/backup.log
